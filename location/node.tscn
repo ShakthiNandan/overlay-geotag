@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://txb0opjmh6mb"]
+
+[ext_resource type="Script" uid="uid://cbg4kbat4tr5i" path="res://gps.gd" id="1_sy5k4"]
+
+[node name="Node" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1191.0
+offset_bottom = 672.0
+script = ExtResource("1_sy5k4")
+
+[node name="LocationTimer" type="Timer" parent="."]
+
+[node name="LocationLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 468.0
+offset_top = 215.0
+offset_right = 758.0
+offset_bottom = 288.0
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 208.0
+offset_top = 449.0
+offset_right = 999.0
+offset_bottom = 518.0
+
+[node name="SubmitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1087.0
+offset_top = 341.0
+offset_right = 1256.0
+offset_bottom = 481.0
+text = "Submit"
+
+[node name="SendPostButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1093.0
+offset_top = 485.0
+offset_right = 1262.0
+offset_bottom = 625.0
+text = "Post"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 463.0
+offset_top = 13.0
+offset_right = 816.0
+offset_bottom = 143.0
+text = "v2.2"
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+timeout = 1.0
